@@ -1,0 +1,6 @@
+<ng-container *ngIf="topHeroes.length">
+  <h2>Top Heroes</h2>
+ <div class="heroes-menu">
+   <a *ngFor="let item of topHeroes" [routerLink]="['/hero',item.id]">{{item.name}}</a>
+ </div>
+</ng-container>
